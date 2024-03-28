@@ -1,0 +1,98 @@
+@import "./base/base.css";
+@import "./base/generics.css";
+
+:root {
+  --x2-color: #eee4da;
+  --x4-color: #ede0c8;
+  --x8-color: #f2b179;
+  --x16-color: #f59563;
+  --x32-color: #f67c5f;
+  --x64-color: #f65e3b;
+  --x128-color: #edcf72;
+  --x256-color: #edcc61;
+  --x512-color: #edc850;
+  --x1024-color: #edc53f;
+  --x2048-color: #edc22e;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game__title {
+  font-size: 2rem;
+}
+
+.game__score {
+  font-size: 1.3rem;
+}
+
+.game__board {
+  background-color: #cdc1b5;
+  border: 5px solid #bbada0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 450px;
+  width: 450px;
+}
+
+.game__tile {
+  align-items: center;
+  border: 3px solid #bbada0;
+  color: #333;
+  display: flex;
+  font-size: 40px;
+  height: 110px;
+  justify-content: center;
+  width: 110px;
+}
+
+.game__tile--x2 {
+  background-color: var(--x2-color);
+}
+
+.game__tile--x4 {
+  background-color: var(--x4-color);
+}
+
+.game__tile--x8 {
+  background-color: var(--x8-color);
+}
+
+.game__tile--x16 {
+  background-color: var(--x16-color);
+}
+
+.game__tile--x32 {
+  background-color: var(--x32-color);
+}
+
+.game__tile--x64 {
+  background-color: var(--x64-color);
+}
+
+.game__tile--x128 {
+  background-color: var(--x128-color);
+}
+
+.game__tile--x256 {
+  background-color: var(--x256-color);
+}
+
+.game__tile--x512 {
+  background-color: var(--x512-color);
+}
+
+.game__tile--x1024 {
+  background-color: var(--x1024-color);
+}
+
+.game__tile--x2048 {
+  background-color: var(--x2048-color);
+}
